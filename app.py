@@ -3,7 +3,7 @@ from neo4j import GraphDatabase
 
 app = Flask(__name__)
 
-driver = GraphDatabase.driver("neo4j://localhost:7687", auth=("neo4j", "maison10+"))
+driver = GraphDatabase.driver("neo4j://localhost:7687", auth=("neo4j", "######")) #connect to your neo4j database
 
 @app.route("/ping", methods=["GET"])
 def ping():
